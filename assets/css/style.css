@@ -25,9 +25,10 @@ body {
     clear: both;
   }
 #display {
-  font-family: monospace;
+  font-family: 'Orbitron', sans-serif;;
+  /* src: url('put_the_location_to_your_font.ttf or .otf'); */
   font-size: 120px;
-  color: green;
+  color: orange;
 
   /* Typography */
   text-align: center;

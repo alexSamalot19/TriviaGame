@@ -13,6 +13,7 @@ window.onload = function() {
 
 //  Variable that will hold our setInterval that runs the stopwatch
 var intervalId;
+var clockoutId;
 
 // prevents the clock from being sped up unnecessarily
 var clockRunning = false;
@@ -50,6 +51,9 @@ function start() {
 
     intervalId = setInterval(count,1000);
     clockRunning = true;
+
+
+    clockoutId = setInterval(Submit,59000);
     
   }
 
@@ -80,12 +84,16 @@ function count() {
 
   //  TODO: increment time by 1, remember we cant use "this" here.
 time--;
+// console.log(time)
+
   //  TODO: Get the current time, pass that into the timeConverter function,
   //        and save the result in a variable.
 var timeStr = timeConverter(time)
   //  TODO: Use the variable you just created to show the converted time in the "display" div.
   $("#display").text(timeStr);
 //   console.log(timeStr);
+
+
 
 }
 
@@ -187,4 +195,7 @@ if (Q3c.checked==true){
 console.log(score)
 var Perc = (score/40)*100;
 $("#display").text(Perc + "%" )
+
+
+clearInterval(clockoutId)
 };
