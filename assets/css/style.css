@@ -2,28 +2,13 @@ body {
     background-image: url("../images/BuzzerBeat.jpg");
 }
 
-#logo{
-    font-family: Impact, Charcoal, sans-serif;
-    color:aliceblue;
-    font-size: xx-large;
-
-
-
-}
-
-
-#main-container {
-    padding-top: 130px;
-    min-height: calc(100vh - 70px);
-  }
-
-
-  .container {
+.container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     clear: both;
   }
+
 #display {
   font-family: 'Orbitron', sans-serif;;
   /* src: url('put_the_location_to_your_font.ttf or .otf'); */
@@ -37,10 +22,17 @@ body {
   background: black;
 }
 
-  /* .auth-image {
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin-top: 10px;
-  margin-right: 25px;
-} */
+#logo{
+  font-family: Impact, Charcoal, sans-serif;
+  color:aliceblue;
+  font-size: xx-large;
+}
+
+
+#main-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+}
+
+
+
